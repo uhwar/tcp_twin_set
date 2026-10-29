@@ -22,8 +22,10 @@ try:
 
                         if not data:
                             break
+                        text = data.decode()
+                        reply = text[::-1]
 
-                        conn.sendall(data)
+                        conn.sendall(reply.encode())
 
                 print(f"Closed {addr}")
 

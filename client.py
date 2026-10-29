@@ -9,7 +9,7 @@ try:
         print(f"Connected to {HOST}:{PORT}")
 
         while True:
-            message = input("> ")
+            message = input("Hello")
 
             if message == "quit":
                 print("Closing client")
